@@ -11,6 +11,7 @@ for tese_case in range(1, T+1):
     count = 0
     # 평균 이하인 사람들을 구해준다. 
     for i in date:
-        if i <= avg:
-            count += 1
+        if i <= avg:    # 평균이하
+        
+            count += 1    # 평균이하인 사람들을 더해준다.
     print('#{} {}'.format(tese_case,count))
