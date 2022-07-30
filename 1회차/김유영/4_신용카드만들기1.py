@@ -8,17 +8,21 @@ for test_case in range(1 ,T+1):
     # print(credit_num)
     credit_num_sum = 0
     for index in range(len(credit_num)):
-        if index % 2 != 0:
-            num = len(credit_num[index])* 2
-            print(index)
-            if num >= 10:
-                num = str(num)
-                credit_num_sum += int(num[0]+num[1])
-                # print(num)
-            else:
-                credit_num_sum += num
-        else:
+        # 짝수는 그대로 더하고 홀수는 곱하기 *2 를한다.
+        if (index+1) % 2 == 0:
             credit_num_sum += credit_num[index]
+        else:
+            credit_num_sum +=(credit_num[index] * 2)
+    
+    # 반복문을 돌려 확인하고, 10으로 떨어지는 것이 16번째 번호로 들어간다.
+    for j in range(10):
+        temp = credit_num_sum + j
+
+        if temp % 10 == 0:
+            result = j
+            break
+
+    print('#{} {}'.format(test_case,result))
             
     
 
