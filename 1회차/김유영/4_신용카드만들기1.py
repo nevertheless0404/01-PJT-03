@@ -8,7 +8,11 @@ for test_case in range(1 ,T+1):
     # print(credit_num)
     credit_num_sum = 0
     for index in range(len(credit_num)):
+<<<<<<< HEAD
         # 짝수는 그래도 더하고 홀수는 곱하기 *2 를 한다.
+=======
+        # 짝수는 그대로 더하고 홀수는 곱하기 *2 를한다.
+>>>>>>> a2c2f513366ccb1f657b2864b1be6be35c71d48f
         if (index+1) % 2 == 0:
             credit_num_sum += credit_num[index]
         else:
